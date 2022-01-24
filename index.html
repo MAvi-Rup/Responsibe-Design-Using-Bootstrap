@@ -5,12 +5,200 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wedding Planner</title>
+    <!-- Fav Icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <!-- BOOTSTRAP LINK -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+              <a class="navbar-brand" href="#">Weeding Planer</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Subscribe</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <section class="mb-5">
+            <div id="carouselExampleDark" class="carousel carousel-fade slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img style="object-fit: cover;" height="600px" src="./images/image-3.jpg"  class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block" style="background-color: #00000085;">
+                    <h5 class="fs-2">Make Our Wedding More Attracttive</h5>
+                    <p>We are Very Much dedicated with our work and we make the best Decoration for our Wedding shoot</p>
+                    <button type="button" class="btn btn-primary btn-lg">Explore More</button>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000" >
+                  <img style="object-fit: cover;" height="600px" src="./images/image-4.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block" style="background-color: #00000085;">
+                    <h5 class="fs-2">We Give You the best Service</h5>
+                    <p>We take all the resposibility of your wedding our expert management team handle in profesionally</p>
+                    <button type="button" class="btn btn-primary btn-lg">Explore More</button>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img style="object-fit: cover;" height="600px" src="./images/image-1.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block" style="background-color: #00000085;">
+                    <h5 class="fs-2">Make Your Dream Wedding</h5>
+                    <p>Make our wedding set like a dream what you really expected and decorate it professionally.</p>
+                    <button type="button" class="btn btn-primary btn-lg">Explore More</button>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </section>
+    </header>
+
+    <main class="container">
+          <div class="row">
+            <div class="col-md-6 col-12">
+              <img class="img-fluid" src="./images/image-5.jpg" alt="">
+
+            </div>
+            <div class="col-md-6 col-12 d-flex align-items-center">
+              <div class="">
+                <h1>New Era of <span>Event Management</span></h1>
+                <p>We are promising to give quality service to all our respective customres. Our Management team Work very hard to satisfy all our customres. Click the button below to know more details.</p>
+                <button type="button" class="btn btn-outline-primary">Explore More</button>
+              </div>
+            </div>
+            <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="d-flex">
+                <div class="toast-body">
+                Hello, world! This is a toast message.
+               </div>
+                <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+            </div>
+          </div>
+
+        <!-- Packages -->
+        <section>
+          <h1 class="text-center">
+            Our Package
+          </h1>
+          <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+              <div class="card p-3 shadow-lg p-3 mb-5 bg-body rounded-3">
+                <h1>$300</h1>
+                <div class="card-body">
+                  <h5 class="card-title">Birthday Party</h5>
+                  <p class="card-text">This Package for a Birthday Party Night</p>
+                  <ul class="list-unstyled">
+                    <li><i class="far fa-check-circle"></i> Decorate the whole place for a birthday party.</li>
+                    <li><i class="far fa-check-circle"></i> Maximum arragement of guests 500.</li>
+                    <li><i class="far fa-check-circle"></i> Two Professional Photographer taking all the picture.</li>
+                    <li><i class="far fa-check-circle"></i> Serve food for all of our guest.</li>
+                    <li><i class="far fa-check-circle"></i> Personal Photoshoot with the Birthday Boy/Girl.</li>
+                  </ul>
+                  <div class="d-grid gap-2">
+                    <button type="button" class="btn text-primary">Choose Plan</button>
+                  </div>
+               
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card p-3 shadow-lg p-3 mb-5 bg-body rounded-3">
+                <h1>$400</h1>
+                <div class="card-body">
+                  <h5 class="card-title">Buisness Meeting</h5>
+                  <p class="card-text">This Package is for Business Metting Deal.</p>
+                  <ul class="list-unstyled">
+                    <li><i class="far fa-check-circle"></i> Decorate the whole place for a Business party.</li>
+                    <li><i class="far fa-check-circle"></i> Maximum arragement of guests 1000.</li>
+                    <li><i class="far fa-check-circle"></i> Three Professional Photographer taking all the picture.</li>
+                    <li><i class="far fa-check-circle"></i> Serve food for all of our guest.</li>
+                    <li><i class="far fa-check-circle"></i> Photoshoot with the guest and their family.</li>
+                  </ul>
+                  <div class="d-grid gap-2">
+                    <button type="button" class="btn text-primary">Choose Plan</button>
+                  </div>
+             
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg-primary text-white p-3 shadow-lg p-3 mb-5 rounded-3 ">
+                <h1>$500</h1>
+                <div class="card-body">
+                  <h5 class="card-title">Wedding Plan</h5>
+                  <p class="card-text">This Package is for Wedding Cremony.</p>
+                  <ul class="list-unstyled">
+                    <li><i class="far fa-check-circle"></i> Decorate the whole place for a Weeding Cremony.</li>
+                    <li><i class="far fa-check-circle"></i> Maximum arragement of guests 2000.</li>
+                    <li><i class="far fa-check-circle"></i> Four Professional Photographer taking all the picture.</li>
+                    <li><i class="far fa-check-circle"></i> Serve food for all of our guest.</li>
+                    <li><i class="far fa-check-circle"></i> Personal Photoshoot with the Bride and Groom</li>
+                  </ul>
+                  <div class="d-grid gap-2">
+                    <button type="button" class="btn  bg-light text-primary rounded-pill">Choose Plan</button>
+                  </div>
+               
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card p-3 shadow-lg p-3 mb-5 bg-body rounded-3">
+                <h1>$700</h1>
+                <div class="card-body">
+                  <h5 class="card-title">Corporate Plan</h5>
+                  <p class="card-text">This Package is for Corporate Party Night.</p>
+                  <ul class="list-unstyled">
+                    <li><i class="far fa-check-circle"></i> Decorate the whole place for a Corporate Party.</li>
+                    <li><i class="far fa-check-circle"></i> Maximum arragement of guests 3000.</li>
+                    <li><i class="far fa-check-circle"></i> Six Professional Photographer taking all the picture.</li>
+                    <li><i class="far fa-check-circle"></i> Serve food for all of our guest.</li>
+                    <li><i class="far fa-check-circle"></i> Special DJ party for all of our guest.</li>
+                  </ul>
+                  <div class="d-grid gap-2">
+                    <button type="button" class="btn text-primary">Choose Plan</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </section>
+    </main>
     
+    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
